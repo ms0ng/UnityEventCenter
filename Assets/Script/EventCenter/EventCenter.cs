@@ -101,7 +101,7 @@ namespace MEventCenter
         {
             if (mEvents.TryGetValue(key, out DelegateType outDele))
             {
-                Delegate.Combine(outDele, dele);
+                mEvents[key] = (DelegateType)Delegate.Combine(outDele, dele);
             }
             else
             {
@@ -128,7 +128,7 @@ namespace MEventCenter
         {
             if (mEvents.TryGetValue(key, out DelegateType outDele))
             {
-                Delegate.Remove(outDele, dele);
+                mEvents[key] = (DelegateType)Delegate.Remove(outDele, dele);
                 if (outDele.GetInvocationList().Length == 0) mEvents.Remove(key);
                 return true;
             }
