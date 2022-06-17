@@ -4,6 +4,8 @@ An event center for Unity(maybe also .Net). Support custom delegate and event ke
 
 一个较为万用的事件中心，支持自定义委托和事件Key类型
 
+现已并入至[我的轻量框架](https://github.com/ms0ng/MSFrame)中
+
 English Readme is working in progress...
 
 ## 快速食用
